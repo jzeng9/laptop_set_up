@@ -12,4 +12,10 @@ parse_git_branch() {
 }
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+# fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# bash history
+HISTFILESIZE=10000000
+HISTSIZE=10000000
+export HISTCONTROL=ignoreboth:erasedups
